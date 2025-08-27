@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Para você, Nina ❤️</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Overlay inicial -->
+  <div id="overlay">
+    <p>Clique no play para começar 🎶</p>
+    <button id="play-btn">🎶▶</button>
+  </div>
+
+  <!-- ❤️ Sua mensagem original ❤️ -->
+  <h1>Para você, <span class="nome-nina">Nina</span> ❤️</h1>
+    
+  <div class="romantic-letter">
+    <p>
+        Eii <span class="black-text">minha</span> <span class="purple-text">prometida</span>, 
+        <span class="black-text">Eu</span> queria só te lembrar o quão incrível 
+        <span class="purple-text">você</span> é. 
+        <span class="purple-text">Você</span> é carinhosa, brincalhona, linda, inteligente e muito especial (pra 
+        <span class="black-text">mim</span>). 
+        A cada conversa com <span class="purple-text">você</span>, 
+        <span class="black-text">eu</span> me sinto tão feliz que só consigo sorrir. 
+        <span class="black-text">Gosto</span> das nossas fofocas, 
+        <span class="black-text">Gosto</span> das nossas "besteiras" (pra 
+        <span class="black-text">mim</span>, são verdades). 
+        <span class="black-text">Gosto</span> de como 
+        <span class="purple-text">você</span> sempre pergunta sobre cada coisinha que 
+        <span class="black-text">eu</span> falo, 
+        <span class="black-text">gosto</span> que sempre 
+        <span class="black-text">procu</span><span class="purple-text">ramos</span> outro assunto para não parar de conversar. 
+        Resumindo, <span class="black-text">gosto</span> de como 
+        <span class="purple-text">você</span> é ❤️.
+    </p>
+  </div>
+
+  <div class="surprise">
+    <button onclick="document.getElementById('surpresa').style.display='block'; loadImages();">
+      💌 Clique pra ver coisas que <span class="purple-text">você</span> mais ama 💌
+    </button>
+    <div id="surpresa" class="hidden-message">
+      <div class="gallery" id="image-gallery"></div>
+    </div>
+  </div>
+
+  <!-- Música -->
+  <audio id="bg-music" loop>
+    <source src="musica.mp3" type="audio/mpeg">
+    Seu navegador não suporta áudio.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
