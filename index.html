@@ -10,13 +10,13 @@
 
 </head>
 <body>
-  <!-- Overlay inicial -->
+
   <div id="overlay">
     <p>Clique no play para começar 🎶</p>
     <button id="play-btn">🎶▶</button>
   </div>
 
-  <!-- ❤️ Sua mensagem original ❤️ -->
+
   <h1>Para você, <span class="nome-nina">Nina</span> ❤️</h1>
     
   <div class="romantic-letter">
@@ -45,12 +45,19 @@
     <button onclick="document.getElementById('surpresa').style.display='block'; loadImages();">
       💌 Clique pra ver coisas que <span class="purple-text">você</span> mais ama 💌
     </button>
+
+    <button id="amo-ainda-btn" onclick="window.open('euaindateamo.html', '_blank')">
+      ❤️ eu ainda te amo
+    </button>
+
+
     <div id="surpresa" class="hidden-message">
       <div class="gallery" id="image-gallery"></div>
     </div>
   </div>
 
-  <!-- Música -->
+
+
   <audio id="bg-music" loop>
     <source src="musica.mp3" type="audio/mpeg">
     Seu navegador não suporta áudio.
